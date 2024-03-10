@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+header{
+    background-color: rgb(130, 23, 23);
+    height: 125px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end
+}
+
+
+.links{
+    margin-bottom: 50px;
+}
+
+
+
+.links a{ 
+    margin: 25px;
+    font-size: 30px;
+    color: black;
+    text-decoration-thickness: 5px;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+.intro{
+    margin-bottom: 30px;
+    background-color: black;
+    height: 75px;
+    width: 400px;
+}
+
+
+.intro h1{
+    color:rgb(130, 23, 23) ;
+    margin-left: 75px;
+    margin-top:20px ;
+    text-shadow: 1px 1px 3px  rgb(130, 23, 23);
+
+
+}
+
+.links a:hover{
+    background-color: black;
+    color: rgb(130, 23, 23);
+}
+
+
+
+figure{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 50px;
+    
+}
+
+
+figure img{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+
+}
+
+@media all and ( max-width: 852px){
+    header{
+        background-color: rgb(69, 137, 27);
+    }
+
+    .intro h1{
+        color: rgb(69, 137, 27);
+    }
+
+
+}
+
+
+/* css for he header endes here however, the all media queries  will be moved to the bottom later */
