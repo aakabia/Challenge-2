@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 
 }
 
@@ -13,25 +14,29 @@ body{
 
 header{
     background-color: rgb(130, 23, 23);
-    height: 125px;
+    min-height: 125px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-end
+    flex-direction: column;
+    align-items: center;
+   
 }
 
 
 .links{
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    align-items: center;
+    
 }
-
 
 
 .links a{ 
     margin: 25px;
     font-size: 30px;
-    color: black;
+    color: white;
     text-decoration-thickness: 5px;
     text-shadow: 1px 1px 3px black;
     font-family:'Times New Roman', Times, serif;
@@ -41,17 +46,18 @@ header{
 .intro{
     margin-bottom: 30px;
     background-color: black;
-    height: 75px;
-    width: 400px;
+    min-height: 75px;
+    width: 100%;
 }
 
 
 .intro h1{
     color:rgb(130, 23, 23) ;
-    margin-left: 75px;
+    margin-left: 0px;
     margin-top:20px ;
     text-shadow: 1px 1px 3px  rgb(130, 23, 23);
     font-family:'Times New Roman', Times, serif;
+    text-align: center;
 
 
 }
@@ -92,6 +98,7 @@ header{
     height: 550px;
     width: 100%;
     background-color: black;
+
     
    
 
@@ -99,6 +106,7 @@ header{
 
 .space{
     height: 500px;
+    max-width: 100%;
     width: 100%;
     opacity: 0.5;
 
@@ -107,7 +115,7 @@ header{
 
 .background h2{
     width: 100%;
-    height: 50px;
+    max-height: 550px;
     text-align: center;
     align-items: end;
     font-size: 40px;
@@ -133,40 +141,47 @@ header{
     flex-wrap: wrap;
     width: 100%;
     height: 400px;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items:center;
+    
+    
+   
+    
+}
+.bio{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 40px;
+
 }
 
-.aboutme h2 {
-    font-size: 75px;
-    height: 300px;
-    width: 320px;
-    margin-top: 80px;
-    margin-left: 450px;
-    border-right: solid 10px black;
-    text-shadow: 1px 1px 3px black;
+
+.title1{
+    margin-left: 100px;
+    height:300px;
+    width: 300px;
+    margin: 0 auto;
+    border-bottom: solid 10px black;
     
     
+}
+
+.title1 h2{
+   margin-top: 80px;
+   margin-left: 70px;
+   font-size: 50px;
+   text-shadow: 1px 1px 3px black;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .indent{
-    margin-left: 75px;
+    margin-left: 50px;
     display: block;
 }
 
 
-
-.bio{
-    width: 1000px;
-    height: 350px;
-    line-height: 40px;
-    margin-top: 30px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 25px;
-    margin-right: 250px;
-
-
-
-}
 .p1{
     text-indent: 25px;
 }
@@ -176,54 +191,115 @@ header{
     margin-top: 25px;
 }
 
-/* This is the final css for the About me section*/
-/* why does About me not wrap? */
 
-@media all and (max-width: 1153px){
+@media(min-width:1240px){
+   /* for tablet and smartphone view*/
+
     header{
-        background-color: rgb(69, 137, 27);
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    }
+    .intro{
+        width: 500px;
     }
 
     .intro h1{
-        color: rgb(69, 137, 27);
-
-    }
-
-    .links a{
+        margin-left: 150px;
         
-        color: rgb(69, 137, 27)
+    }
+    
+    
+    .links{
+        flex-direction: row;
+    }
+    
+    .links a{
+        color: black;
 
     }
+    
+    
+    
 
-    .background h2{
-        background-color:rgb(69, 137, 27) ;
+    .title1 h2{
+        margin-left: 110px;
+        
+
     }
 
     
+ 
+    .bio{
+        
+        height: 350px;
+        line-height: 40px;
+        margin-top: 30px;
+        margin-right: 50px;
+        align-items: center;
+        
+    }   
 }
 
 
 
 
-@media all and ( max-width: 390px){
-    header{
-        background-color: rgb(69, 137, 27);
+
+
+
+
+
+@media(min-width:1500px){
+/* for desktop*/
+
+
+    .bio{
+        width: 1000px;
+
+        
     }
 
-    .intro h1{
-        color: rgb(69, 137, 27);
+    .title1{
+        border-bottom: none;
+        border-right:black solid 10px;
+        
     }
 
-    .links a{
-        color: rgb(69, 137, 27);
-      
-
-    }
-
-    .background h2{
-        background-color:rgb(69, 137, 27) ;
-    }
 
 
 
 }
+
+
+
+@media (min-width:600px){
+/* apply to tablet size*/
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
