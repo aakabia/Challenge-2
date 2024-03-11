@@ -34,6 +34,7 @@ header{
     color: black;
     text-decoration-thickness: 5px;
     text-shadow: 1px 1px 3px black;
+    font-family:'Times New Roman', Times, serif;
 }
 
 
@@ -50,6 +51,7 @@ header{
     margin-left: 75px;
     margin-top:20px ;
     text-shadow: 1px 1px 3px  rgb(130, 23, 23);
+    font-family:'Times New Roman', Times, serif;
 
 
 }
@@ -61,7 +63,7 @@ header{
 
 
 
-figure{
+.ava{
     height: 100px;
     width: 100px;
     margin-bottom: 15px;
@@ -71,7 +73,7 @@ figure{
 }
 
 
-figure img{
+.avatar{
 
     height: 100px;
     width: 100px;
@@ -79,7 +81,131 @@ figure img{
 
 }
 
-@media all and ( max-width: 852px){
+
+/* css for he header endes here however, the all media queries  will be moved to the bottom later */
+
+
+.background{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 550px;
+    width: 100%;
+    background-color: black;
+    
+   
+
+}
+
+.space{
+    height: 500px;
+    width: 100%;
+    opacity: 0.5;
+
+}
+
+
+.background h2{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-items: end;
+    font-size: 40px;
+    background-color: rgb(130, 23, 23);
+    text-decoration-thickness: 5px;
+    text-shadow: 1px 1px 3px black;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+
+
+.background h2::after{
+    content: '\2965';
+}
+
+
+
+/* background image css ends here */
+
+.aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.aboutme h2 {
+    font-size: 75px;
+    height: 300px;
+    width: 320px;
+    margin-top: 80px;
+    margin-left: 450px;
+    border-right: solid 10px black;
+    text-shadow: 1px 1px 3px black;
+    
+    
+}
+
+.indent{
+    margin-left: 75px;
+    display: block;
+}
+
+
+
+.bio{
+    width: 1000px;
+    height: 350px;
+    line-height: 40px;
+    margin-top: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-right: 250px;
+
+
+
+}
+.p1{
+    text-indent: 25px;
+}
+
+.p2{
+    text-indent: 25px;
+    margin-top: 25px;
+}
+
+/* This is the final css for the About me section*/
+/* why does About me not wrap? */
+
+@media all and (max-width: 1153px){
+    header{
+        background-color: rgb(69, 137, 27);
+    }
+
+    .intro h1{
+        color: rgb(69, 137, 27);
+
+    }
+
+    .links a{
+        
+        color: rgb(69, 137, 27)
+
+    }
+
+    .background h2{
+        background-color:rgb(69, 137, 27) ;
+    }
+
+    
+}
+
+
+
+
+@media all and ( max-width: 390px){
     header{
         background-color: rgb(69, 137, 27);
     }
@@ -88,8 +214,16 @@ figure img{
         color: rgb(69, 137, 27);
     }
 
+    .links a{
+        color: rgb(69, 137, 27);
+      
+
+    }
+
+    .background h2{
+        background-color:rgb(69, 137, 27) ;
+    }
+
+
 
 }
-
-
-/* css for he header endes here however, the all media queries  will be moved to the bottom later */
