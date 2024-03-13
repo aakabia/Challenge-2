@@ -140,9 +140,10 @@ header{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 400px;
+    height: 1100px;
     justify-content:space-between;
     align-items:center;
+    
     
     
    
@@ -160,7 +161,7 @@ header{
 
 .title1{
     margin-left: 100px;
-    height:300px;
+    height:250px;
     width: 300px;
     margin: 0 auto;
     border-bottom: solid 10px black;
@@ -190,6 +191,194 @@ header{
     text-indent: 25px;
     margin-top: 25px;
 }
+/*  about me section css ends here */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 1700px;
+    justify-content: start;
+    align-items: center;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.bigger{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.three-boxes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    
+    
+
+}
+
+.projects div{
+    margin-top: 15px;
+}
+
+.title2{
+    height:250px;
+    width: 300px;
+    border-bottom: solid 10px black;
+}
+
+.title2 h2 {
+    margin-top: 80px;
+   margin-left: 70px;
+   font-size: 50px;
+   text-shadow: 1px 1px 3px black;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.html-java-css{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-image:url(spacelog.jpg);
+    position: relative;
+    
+
+
+}
+
+.html-java-css a{
+    height: 200px;
+    width: 100%;
+   
+    
+}
+
+
+.html-java-css h3{
+    background-color: rgb(130, 23, 23);
+    height: 55px;
+    z-index: 10; 
+    position: absolute;
+}
+
+.space-log{
+    font-size: larger;
+    
+}
+
+.node-iot{
+    width: 100%;
+    height: 300px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    background-image: url(cosmos.jpg);
+    justify-content: start;
+    position: relative;
+    
+    
+}
+
+.node-iot a{
+    height: 200px;
+    width: 100%;
+    
+}
+
+.node-iot h3{
+    background-color: rgb(130, 23, 23);
+    height: 55px;
+    z-index: 10;
+    position: absolute;
+
+}
+
+.cosmos{
+    font-size: larger;
+}
+
+.mern{
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    background-image: url(northenlights.jpg);
+    position: relative;
+    
+}
+
+.mern a{
+    height: 200px;
+    width: 100%;
+    
+}
+
+.mern h3{
+    background-color: rgb(130, 23, 23);
+    height: 55px;
+    z-index: 10;
+    position: absolute;
+}
+.spider{
+    font-size: larger;
+}
+
+
+.react{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    background-image: url(hydraa.jpg);
+    position: relative;
+    
+}
+
+.react a{
+    height: 200px;
+    width: 100%;
+    
+}
+
+.react h3{
+    background-color: rgb(130, 23, 23);
+    height: 55px;
+    z-index: 10;
+    position: absolute;
+}
+
+.hydra{
+    font-size: larger;
+}
+
+/* css for main section ends here */
+
+
+
+
+
+
 
 
 @media(min-width:1240px){
@@ -230,29 +419,98 @@ header{
 
     }
 
-    
  
     .bio{
         
-        height: 350px;
+        height: 550px;
         line-height: 40px;
         margin-top: 30px;
         margin-right: 50px;
         align-items: center;
         
-    }   
+    }
+
+
+   
+
+    main{
+        height: 1500px;
+        ;
+    }
+        
+
+
+    .projects{
+        
+        height: 1100px;
+        flex-direction: row;
+        
+        
+    }
+
+    
+       .bigger{
+        width: 50%;
+        height: 800px;
+        margin-bottom: 150px;
+       } 
+
+       .bigger div{
+        flex-grow: 3;
+       }
+
+       .three-boxes{
+        width: 50% ;
+       }
+
+    
+
+    
+    .projects section div{
+        
+        opacity: .9;
+        
+    }
+
+    
+
+    .projects section div:hover{
+        opacity: 1;
+    }
+
+    
+
+    
+    
+    
+   
+
+
+
+}   
+
+
+@media (min-width:550px){
+    /* apply to tablet size and break size of projects*/
+    
+    
+    .projects div{
+        width: 520px;
+    
+    }
+    
 }
-
-
-
-
-
 
 
 
 
 @media(min-width:1500px){
 /* for desktop*/
+
+
+    .aboutme{
+        height: 700px;
+    }
 
 
     .bio{
@@ -262,28 +520,62 @@ header{
     }
 
     .title1{
+        margin-bottom: 250px;
         border-bottom: none;
         border-right:black solid 10px;
+        
         
     }
 
 
+    main{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 1000px;
+    }
+
+    .title2{
+    
+
+        border-bottom: none;
+        border-right: black solid 10px;
+        margin: 0 auto;
+
+        
+
+    }
+
+    
+
+    .projects{
+        width: 950px;
+        margin-right: 100px;
+        margin-bottom: 300px ;
+        height: 800px;
+        margin-bottom: 200px;
+    }
+
+    .projects div{
+        width: 400px;
+
+    }
+
+    .title2{
+        margin-bottom: 300px ;
+        
+    }
+
+    
+
+    
+
+    
 
 
+        
 }
 
-
-
-@media (min-width:600px){
-/* apply to tablet size*/
-
-
-
-
-
-
-
-}
 
 
 
