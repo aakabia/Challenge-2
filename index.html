@@ -9,7 +9,7 @@
   </head>
 
   <!-- added an icon and style sheet to my webpage header with the link element -->
-
+  <!-- connected all my links in the header with an id so they are fumctional-->
   <body>
     <header>
       <div class="intro">
@@ -20,9 +20,9 @@
         <img class="avatar" src="assets /Avatar .png" alt="A Astronaut " />
       </figure>
       <nav class="links">
-        <a href="">About Me</a>
-        <a href="">Work</a>
-        <a href="">Contact Me</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#work">Work</a>
+        <a href="#contactme">Contact Me</a>
         <a href="">Resume</a>
       </nav>
     </header>
@@ -34,7 +34,7 @@
     </figure>
     <!-- added a background image in the html instaed of css -->
 
-    <section class="aboutme">
+    <section class="aboutme" id="aboutme">
       <div class="title1">
         <h2>About<span class="indent">Me!</span></h2>
       </div>
@@ -58,7 +58,7 @@
     </section>
 
     <!-- End of the about me section -->
-    <main>
+    <main id="work">
       <section class="title2">
         <h2>Work!</h2>
       </section>
@@ -102,7 +102,7 @@
       </section>
     </main>
     <!-- added a main section with 4 sections one for the title, bigger project picture, one for the three boxes and one for the three boxes and bigger project picture.-->
-    <footer>
+    <footer id="contactme">
       <div class="title3">
         <h2>Contact <span class="indent2">Me!</span></h2>
       </div>
@@ -110,10 +110,11 @@
       <div class="contactways">
         <h3 class="way1">(571)-295-3297</h3>
         <h3 class="way1">akabia199597@gmail.com</h3>
-        <h3><a class="way2" href="">GitHub</a></h3>
-        <h3><a class="way2" href="">Twitter</a></h3>
+        <h3><a class="way2" href="https://github.com/dashboard">GitHub</a></h3>
+        <h3><a class="way2" href="https://twitter.com/">Twitter</a></h3>
       </div>
     </footer>
     <!-- Added a footer with 2 divs. one for my title of the footer and another for the items.-->
+    <!-- connected my links in the footer by adding a url in href-->
   </body>
 </html>
